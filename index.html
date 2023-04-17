@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/index.css">
+
+    <style>
+        .attribution {
+            margin-top: 5px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+<main class="nft-preview__card">
+    <div class="nft-preview__image-container">
+        <img src="images/image-equilibrium.jpg" alt="Previsualization of the item to buy">
+        <div class="nft-preview__color-overlay-container">
+            <img src="images/icon-view.svg" alt="">
+        </div>
+    </div>
+    <section class="nft-preview__info-container">
+        <h1 class="nft-preview__text-color">Equilibrium #3429</h1>
+        <p class="nft-preview__item-description">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="nft-preview__payment-container">
+            <div>
+                <img src="images/icon-ethereum.svg" alt="">
+                <span class="nft-preview__price">0.041 ETH</span>
+            </div>
+            <div>
+                <img src="images/icon-clock.svg" alt="">
+                <span class="nft-preview__days-left">3 days left</span>
+            </div>
+        </div>
+        <hr class="nft-preview__separator">
+        <div class="nft-preview__about-container">
+            <img src="images/image-avatar.png" alt="Photo from the creator of the item">
+            <p>Creation of <span class="nft-preview__creator-name nft-preview__text-color">Jules Wyvern</span></p>
+        </div>
+    </section>
+</main>
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Mark Anthony Jorge C.</a>.
+</footer>
+</body>
+</html>

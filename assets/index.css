@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft-preview__card {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1.5em;
+}
+
+.nft-preview__image-container {
+    margin-bottom: 1em;
+
+    position: relative;
+}
+
+.nft-preview__image-container > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+    display: block;
+}
+
+.nft-preview__image-container > .nft-preview__color-overlay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.5);
+    border-radius: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nft-preview__image-container > .nft-preview__color-overlay-container:hover {
+    opacity: 1;
+}
+
+.nft-preview__info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-preview__info-container > h1 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.nft-preview__info-container > h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nft-preview__item-description {
+    margin-bottom: 1em;
+}
+
+.nft-preview__payment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.nft-preview__payment-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.nft-preview__payment-container > div > img {
+    width: 0.75em;
+    height: 0.80em;
+    margin-right: 0.5em;
+}
+
+.nft-preview__price {
+    font-size: 1.1em;
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-preview__separator {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 1em;
+}
+
+.nft-preview__about-container {
+    display: flex;
+    align-items: center;
+}
+
+.nft-preview__about-container > img {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1em;
+}
+
+.nft-preview__about-container > p > .nft-preview__creator-name {
+    color: white;
+}
+
+.nft-preview__about-container > p > .nft-preview__creator-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
